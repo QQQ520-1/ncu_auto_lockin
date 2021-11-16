@@ -74,6 +74,10 @@ back_home();
 // while (!click('a学生疫情常态化管理'));
 my_click('通讯录');
 my_click('南昌大学');
+while (!click('电子ID'));
+id('js2').waitFor();
+sleep(2000);
+back();
 while(!click('a学生疫情常态化管理'));
 
 while (!text('用户无权访问').exists() && !text('每日健康打卡').exists());
